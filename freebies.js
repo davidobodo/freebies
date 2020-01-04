@@ -1,5 +1,5 @@
 const firstElement = document.querySelector('.img:nth-child(1)')
-firstElement.addEventListener('click', move)
+firstElement.addEventListener('mousemove', move)
 
 function move(e) {
     var rect = e.target.getBoundingClientRect();
@@ -7,5 +7,5 @@ function move(e) {
     var height = rect.height;
     var positionX = e.clientX - (width / 2);
     var positionY = e.clientY - (height / 2);
-    console.log(positionX, positionY)
+    firstElement.style.transform = `translate3d(${positionX}px, ${positionY}px, 0)`;
 }
