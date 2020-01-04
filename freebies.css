@@ -1,0 +1,62 @@
+body{
+    background-color: red;
+}
+
+.scene{
+    display: flex;
+    position: relative;
+
+    /* transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); */
+    /* transform-style: preserve-3d; */
+    /* backface-visibility: hidden; */
+    /* pointer-events:none */
+
+    top: 0;
+    left: 0;
+    right: 0px;
+    width: 100%;
+}
+
+
+
+.img{
+    position: absolute;
+}
+
+.img:nth-child(13){
+    z-index: -13;
+}
+.img:nth-child(12){
+    z-index: -12;
+}
+.img:nth-child(11){
+    z-index: -11;
+}
+.img:nth-child(10){
+    z-index: -10;
+}
+.img:nth-child(9){
+    z-index: -9;
+}
+.img:nth-child(7){
+    z-index: -7;
+}
+.img:nth-child(6){
+    z-index: -6;
+}
+.img:nth-child(1){
+    z-index: 100;
+}
+
+
+
+
+
+.img:nth-child(1){
+    transform: translate3d(0px, 0px 0px);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    display: block;
+    top: 0;
+    left:0;
+}
