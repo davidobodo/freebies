@@ -1,6 +1,6 @@
-const firstSet = document.querySelectorAll('div[data-depth="1"]')
-firstSet.forEach(elem => elem.addEventListener("mousemove", move))
+const firstElement = document.querySelector('.img:nth-child(1)')
+firstElement.addEventListener('mousemove', e => console.log(e))
 
-function move(e){
+function move(e) {
     console.log(e)
 }
