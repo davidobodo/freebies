@@ -1,5 +1,5 @@
 body{
-    background-color: red;
+    background-color: #EB235E;
 }
 
 *, *:before, *:after{
@@ -68,3 +68,63 @@ body{
     top: 0;
     left:0;
 }
+
+.details{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 150px;
+    padding-top: 200px;
+    color: #ffffff;
+    width: 50vw;
+}
+
+.header{
+    font-size: 120px;
+    font-weight: 100;
+    line-height: 100px;
+    margin-bottom: 50px;
+}
+
+.header span {
+    font-weight: 600;
+}
+
+.body{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.links{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+button .number{
+    background-color: #EB235E;
+    color: #ffffff;
+    font-size: 25px;
+    border-radius: 50%;
+    padding: 7px;
+    margin-right: 20px;
+}
+
+button .text{
+    font-size: 17px;
+    color: #EB235E;
+}
+
+button .text h4:nth-child(1){
+    font-size: 23px;
+}
+
+
+
