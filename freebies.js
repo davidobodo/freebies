@@ -1,4 +1,6 @@
 const firstElement = document.querySelector('.scene')
+const secondElement = document.querySelector('.details')
+const thirdElement = document.querySelector('.footer')
 const firstSet = document.querySelectorAll(".img[data-depth='1']");
 const secondSet = document.querySelector(".img[data-depth='2']");
 const thirdSet = document.querySelector(".img[data-depth='3']");
@@ -11,16 +13,18 @@ var width = document.documentElement.clientWidth;
 var height = document.documentElement.clientHeight;
 
 firstElement.addEventListener('mousemove', move)
+secondElement.addEventListener('mousemove', move)
+thirdElement.addEventListener('mousemove', move)
 
 function move(e) {
     var positionX = e.clientX - (width / 2);
     var positionY = e.clientY - (height / 2);
-    var actualX1 = (positionX / width) * 15
-    var actualY1 = (positionY / width) * 15
-    var actualX2 = (positionX / width) * 20
-    var actualY2 = (positionY / width) * 20
-    var actualX3 = (positionX / width) * 70
-    var actualY3 = (positionY / width) * 70
+    var actualX1 = (positionX / width) * 100
+    var actualY1 = (positionY / width) * 100
+    var actualX2 = (positionX / width) * 70
+    var actualY2 = (positionY / width) * 70
+    var actualX3 = (positionX / width) * 150
+    var actualY3 = (positionY / width) * 150
     var actualX4 = (positionX / width) * 30
     var actualY4 = (positionY / width) * 30
     var actualX5 = (positionX / width) * 35
