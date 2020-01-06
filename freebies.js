@@ -6,7 +6,6 @@ const fourthSet = document.querySelector(".img[data-depth='4']");
 const fifthSet = document.querySelector(".img[data-depth='5']");
 const sixthSet = document.querySelectorAll(".img[data-depth='6']");
 const seventhSet = document.querySelectorAll(".img[data-depth='7']");
-console.log(firstSet)
 
 var width = document.documentElement.clientWidth;
 var height = document.documentElement.clientHeight;
