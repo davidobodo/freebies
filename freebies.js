@@ -10,9 +10,39 @@ const fifthSet = document.querySelector(".img[data-depth='5']");
 const sixthSet = document.querySelectorAll(".img[data-depth='6']");
 const seventhSet = document.querySelectorAll(".img[data-depth='7']");
 
+const myArray = [
+    {
+        setName: firstSet,
+        displacementAmount: 100,
+    },
+    {
+        setName: secondSet,
+        displacementAmount: 70,
+    },
+    {
+        setName: thirdSet,
+        displacementAmount: 150,
+    },
+    {
+        setName: fourthSet,
+        displacementAmount: 30,
+    },
+    {
+        setName: fifthSet,
+        displacementAmount: 35,
+    },
+    {
+        setName: sixthSet,
+        displacementAmount: 40,
+    },
+    {
+        setName: seventhSet,
+        displacementAmount: 45,
+    },
+]
+
 var width = document.documentElement.clientWidth;
 var height = document.documentElement.clientHeight;
-
 
 
 firstElement.addEventListener('mousemove', move)
@@ -24,13 +54,7 @@ function move(e) {
     var positionY = e.clientY - (height / 2);
     var x = positionX / width;
     var y = positionY / width;
-    displacement(100, firstSet, x, y)
-    displacement(70, secondSet, x, y)
-    displacement(150, thirdSet, x, y)
-    displacement(30, fourthSet, x, y)
-    displacement(35, fifthSet, x, y)
-    displacement(40, sixthSet, x, y)
-    displacement(45, seventhSet, x, y)
+    myArray.forEach(set => displacement(set.displacementAmount, set.setName, x, y))
 }
 
 function displacement(value, element, x, y) {
