@@ -11,14 +11,17 @@ const seventhSet = document.querySelectorAll(".img[data-depth='7']");
 
 var width = document.documentElement.clientWidth;
 var height = document.documentElement.clientHeight;
+var positionX = e.clientX - (width / 2);
+var positionY = e.clientY - (height / 2);
+var distanceX = positionX / width;
+var distanceY = positionY / width;
 
 firstElement.addEventListener('mousemove', move)
 secondElement.addEventListener('mousemove', move)
 thirdElement.addEventListener('mousemove', move)
 
 function move(e) {
-    var positionX = e.clientX - (width / 2);
-    var positionY = e.clientY - (height / 2);
+
     var actualX1 = (positionX / width) * 100
     var actualY1 = (positionY / width) * 100
     var actualX2 = (positionX / width) * 70
